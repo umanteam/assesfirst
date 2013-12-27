@@ -53,7 +53,7 @@ body{background-color: @bodygray;}
 
 .hover-bgcolor(@bgcolor){
 	
-	color : @bgcolor !important;
+	background-color : @bgcolor !important;
 	text-decoration : none;
 	transition : background-color 800ms ease;
 	-moz-transition : background-color 800ms ease; 
@@ -71,6 +71,7 @@ body{background-color: @bodygray;}
 	-webkit-border-radius: @radius;
 	-ms-border-radius: @radius;
 }
+
 /*************** navbar *********************/
 
 .navbar-inverse {
@@ -111,6 +112,28 @@ body{background-color: @bodygray;}
 }
 .bt-search {margin-top : 10px; width: auto !important; float: left;}
 
+
+/***************** btn *********************/
+.btn{
+	border: none
+}
+.btn-success{
+	background: @green ;
+	&:hover{
+		.hover-bgcolor(@lightgreen);
+	}
+	&:active{
+		background: @darkgreen;
+	}
+}
+
+.btn-default{
+	background: @bodygray ;
+	&:hover{
+		background: @lightgray;
+	}
+}
+
 /*************** aside *********************/
 
 aside {background-color: #fff;.border(6px)}
@@ -118,3 +141,7 @@ aside {background-color: #fff;.border(6px)}
 /*************** Main *********************/
 
 .main {background-color: @lightgray; .border(6px)}
+
+
+.my-alert{ float: left; display: inline-flex; padding: 5px 15px; margin-right: 10px; }
+.alert-dismissable .close { position: relative; top: 2px;	right: -7px;	color: inherit;}

@@ -1,0 +1,154 @@
+body {
+  background-color: #ebebeb;
+}
+.navbar-inverse {
+  background-color: #424242;
+  position: relative;
+  padding: 16px 0;
+}
+.navbar-inverse h1 {
+  display: none;
+}
+.navbar-nav .active a {
+  background-color: transparent !important;
+}
+.navbar-nav a:hover {
+  color: #b5e81a !important;
+  text-decoration: none;
+  transition: color 800ms ease;
+  -moz-transition: color 800ms ease;
+  -o-transition: color 800ms ease;
+  -webkit-transition: color 800ms ease;
+  -ms-transition: color 800ms ease;
+}
+.nav-pills {
+  float: left;
+}
+.nav-icon {
+  padding: 10px 8px;
+  float: left;
+}
+.nav-icon a:focus {
+  background-color: rgba(0,0,0,0);
+}
+.nav-icon a.ico-1 {
+  background-position: 0 0;
+  background-image: url('../ico/ico-nav.png');
+  width: 30px;
+  height: 30px;
+}
+.nav-icon a.ico-1:hover {
+  background-position: 0 33px;
+  transition: background-position 400ms ease;
+  -moz-transition: background-position 400ms ease;
+  -o-transition: background-position 400ms ease;
+  -webkit-transition: background-position 400ms ease;
+  -ms-transition: background-position 400ms ease;
+  background-color: rgba(0,0,0,0) !important;
+}
+.nav-icon a.ico-2 {
+  background-position: -33px 0;
+  background-image: url('../ico/ico-nav.png');
+  width: 30px;
+  height: 30px;
+}
+.nav-icon a.ico-2:hover {
+  background-position: -33px 33px;
+  transition: background-position 400ms ease;
+  -moz-transition: background-position 400ms ease;
+  -o-transition: background-position 400ms ease;
+  -webkit-transition: background-position 400ms ease;
+  -ms-transition: background-position 400ms ease;
+  background-color: rgba(0,0,0,0) !important;
+}
+.nav2-icon {
+  padding: 10px 2px;
+  float: left;
+}
+.nav2-icon a.ico-3 {
+  background-position: 32px 0;
+  background-image: url('../ico/ico-nav.png');
+  width: 30px;
+  height: 30px;
+}
+.nav2-icon a.ico-3:hover {
+  background-position: 32px 30px;
+  transition: background-position 400ms ease;
+  -moz-transition: background-position 400ms ease;
+  -o-transition: background-position 400ms ease;
+  -webkit-transition: background-position 400ms ease;
+  -ms-transition: background-position 400ms ease;
+  background-color: rgba(0,0,0,0) !important;
+}
+.nav2-icon a.ico-4 {
+  background-position: 62px 0;
+  background-image: url('../ico/ico-nav.png');
+  width: 30px;
+  height: 30px;
+}
+.nav2-icon a.ico-4:hover {
+  background-position: 62px 31px;
+  transition: background-position 400ms ease;
+  -moz-transition: background-position 400ms ease;
+  -o-transition: background-position 400ms ease;
+  -webkit-transition: background-position 400ms ease;
+  -ms-transition: background-position 400ms ease;
+  background-color: rgba(0,0,0,0) !important;
+}
+.bt-search {
+  margin-top: 10px;
+  width: auto !important;
+  float: left;
+}
+.btn {
+  border: none;
+}
+.btn-success {
+  background: #99d600;
+}
+.btn-success:hover {
+  background-color: #d1fb32 !important;
+  text-decoration: none;
+  transition: background-color 800ms ease;
+  -moz-transition: background-color 800ms ease;
+  -o-transition: background-color 800ms ease;
+  -webkit-transition: background-color 800ms ease;
+  -ms-transition: background-color 800ms ease;
+}
+.btn-success:active {
+  background: #b5e81a;
+}
+.btn-default {
+  background: #ebebeb;
+}
+.btn-default:hover {
+  background: #fafafa;
+}
+aside {
+  background-color: #fff;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+}
+.main {
+  background-color: #fafafa;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+}
+.my-alert {
+  float: left;
+  display: inline-flex;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+.alert-dismissable .close {
+  position: relative;
+  top: 2px;
+  right: -7px;
+  color: inherit;
+}
