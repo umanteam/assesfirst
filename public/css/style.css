@@ -76,15 +76,25 @@ input[type="checkbox"]:before{
 	border-radius: 3px;
 }
 input[type="checkbox"]:checked:before{
-	background-color: #5cb85c;
-	background-image: -webkit-linear-gradient(#5cb85c,#4cae4c);
-	background-image: linear-gradient(#5cb85c,#4cae4c);
+	background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%);
+	background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+	background-repeat: repeat-x;
+	border-color: #3e8f3e;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c',endColorstr='#ff419641',GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	border: #4cae4c solid 1px;
 }
 
 #eval .panel-body input[type="checkbox"]:before {
 	margin-top: -12px;
 	float: left;
+}
+.evalue-table .label{
+	padding: 6px;
+	font-size: 0;
+	color: transparent;
+	border-radius: 50%;
+	vertical-align: middle;
 }
 
 .pagination{
