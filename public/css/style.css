@@ -60,11 +60,11 @@ div.container a.brand {
 	color: #fffb00;
 }
 
-.evalue-table .selection{
+input[type="checkbox"]{
 	width: 15px;
 	height: 0;
 }
-.evalue-table .selection:before{
+input[type="checkbox"]:before{
 	content: " ";
 	display: inline-block;
 	width: 14px;
@@ -75,11 +75,16 @@ div.container a.brand {
 	border: #ccc solid 1px;
 	border-radius: 3px;
 }
-.evalue-table .selection:checked:before{
+input[type="checkbox"]:checked:before{
 	background-color: #5cb85c;
 	background-image: -webkit-linear-gradient(#5cb85c,#4cae4c);
 	background-image: linear-gradient(#5cb85c,#4cae4c);
 	border: #4cae4c solid 1px;
+}
+
+#eval .panel-body input[type="checkbox"]:before {
+	margin-top: -12px;
+	float: left;
 }
 
 .pagination{
