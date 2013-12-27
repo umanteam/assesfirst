@@ -1,3 +1,120 @@
-@coldgray: #424242;
+/***** Gris *****/
+@darkgray: #424242;
+@bodygray : #ebebeb;
+@lightgray : #fafafa;
+@gray : #9a9a9a;
 
-.navbar-inverse {background-color: @coldgray !important;}
+/***** Vert *****/
+@green: #99d600;
+@lightgreen : #d1fb32;
+@darkgreen : #b5e81a;
+
+/***** Rouge *****/
+@red: #ff2600;
+
+/***** Blue *****/
+@blue : #3a8dc5;
+@darkblue : #448aab;
+@lightblue : #dceef6;
+
+body{background-color: @bodygray;} 
+
+.attachement(@position: relative) {
+	position : @position;
+}
+
+.ico-def(@width:26px,@height:26px) {
+	width : @width;
+	height : @height;
+}
+
+/*************** Etat Hover *********************/
+.hover-ico() {
+	
+	transition : background-position 400ms ease;
+	-moz-transition : background-position 400ms ease;
+	-o-transition : background-position 400ms ease;
+	-webkit-transition : background-position 400ms ease;
+	-ms-transition : background-position 400ms ease;
+	
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.hover-color(@color){
+	
+	color : @color !important;
+	text-decoration : none;
+	transition : color 800ms ease;
+	-moz-transition : color 800ms ease; 
+	-o-transition : color 800ms ease; 
+	-webkit-transition : color 800ms ease;
+	-ms-transition : color 800ms ease; 
+}
+
+.hover-bgcolor(@bgcolor){
+	
+	color : @bgcolor !important;
+	text-decoration : none;
+	transition : background-color 800ms ease;
+	-moz-transition : background-color 800ms ease; 
+	-o-transition : background-color 800ms ease; 
+	-webkit-transition : background-color 800ms ease;
+	-ms-transition : background-color 800ms ease; 
+}
+
+/*************** bordure arrondie *********************/
+
+.border(@radius){
+	border-radius: @radius;
+	-moz-border-radius: @radius;
+	-o-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-ms-border-radius: @radius;
+}
+/*************** navbar *********************/
+
+.navbar-inverse {
+
+	background-color: @darkgray; .attachement; padding: 16px 0;
+		
+		h1 {display: none;}
+	}
+.navbar-nav {
+
+	.active { 
+		a{background-color :transparent !important;}
+		}
+	a:hover {.hover-color(#b5e81a)}
+}
+.nav-pills {float:left;}
+.nav-icon { padding: 10px 8px; float: left;
+	
+	a:focus {background-color: rgba(0, 0, 0, 0);}
+	a.ico-1 { background-position : 0 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
+	&:hover {background-position : 0 33px;.hover-ico;}
+	}
+	
+	a.ico-2 { background-position : -33px 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
+	&:hover {background-position : -33px 33px;.hover-ico;}
+	}
+	
+}
+
+.nav2-icon { padding: 10px 2px; float: left;
+	a.ico-3 { background-position : 32px 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
+	&:hover {background-position : 32px 30px;.hover-ico;}
+	}	
+		
+	a.ico-4 { background-position : 62px 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
+	&:hover {background-position : 62px 31px;.hover-ico;}
+	}
+}
+.bt-search {margin-top : 10px; width: auto !important; float: left;}
+
+/*************** aside *********************/
+
+aside {background-color: #fff;.border(6px)}
+
+/*************** Main *********************/
+
+.main {background-color: @lightgray; .border(6px)}
