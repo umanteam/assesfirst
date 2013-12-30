@@ -17,6 +17,9 @@
 @darkblue : #448aab;
 @lightblue : #dceef6;
 
+/*****Jaune etoile *******/
+@yellow: #fffb00;
+
 body{background-color: @bodygray;} 
 
 .attachement(@position: relative) {
@@ -71,6 +74,9 @@ body{background-color: @bodygray;}
 	-webkit-border-radius: @radius;
 	-ms-border-radius: @radius;
 }
+
+/************** Checkbox background ******************/
+
 
 /*************** navbar *********************/
 
@@ -142,6 +148,94 @@ aside {background-color: #fff;.border(6px)}
 
 .main {background-color: @lightgray; .border(6px)}
 
+/*************** frontOffice Manager - Home *************/
+	.my-alert{ float: left; display: inline-flex; padding: 5px 15px; margin-right: 10px; }
+	.alert-dismissable .close { position: relative; top: 2px;	right: -7px;	color: inherit;}
 
-.my-alert{ float: left; display: inline-flex; padding: 5px 15px; margin-right: 10px; }
-.alert-dismissable .close { position: relative; top: 2px;	right: -7px;	color: inherit;}
+	.col-md-3 {
+		#accordion.panel-group {
+			border-radius: 0;
+			border: none;
+			.panel{
+				border-radius: 0;
+				border: none;
+			}
+		}
+	}
+
+	/****************** All checkbox: ****************/
+	input[type="checkbox"]{
+		width: 15px;
+		height: 0;
+		&:before{
+			content: " ";
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background-color: #eee;
+			background-image: -webkit-linear-gradient(#fff,#dedede);
+			background-image: linear-gradient(#fff,#dedede);
+			border: #ccc solid 1px;
+			border-radius: 3px;
+		}
+		&:checked{
+			&:before{
+				background-image: -webkit-linear-gradient(top,#5cb85c 0,#419641 100%);
+				background-image: linear-gradient(to bottom,#5cb85c 0,#419641 100%);
+				background-repeat: repeat-x;
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c',endColorstr='#ff419641',GradientType=0);
+				filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+				border: #4cae4c solid 1px;
+				border-color: #3e8f3e;
+			}
+		}
+	}
+
+	/*********** Start checkbox ******************/
+
+	.favorite{
+		display:none;
+		&:checked{
+			+ .glyphicon{
+				&:before{
+					color: @yellow;
+				}
+			}
+		}
+	}
+
+	.evalue-table {
+		input{
+			cursor: pointer;
+			float: left;
+		}
+		.glyphicon:before{
+			cursor: pointer;
+			font-size: 18px;
+			color: #f9f9f9;
+			text-shadow: 0 0px 2px rgba(0,0,0,.7);
+		}
+		.label{
+			padding: 6px;
+			font-size: 0;
+			color: transparent;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+	}
+
+	#eval {
+		.panel-body {
+			input[type="checkbox"]{
+				&:before {
+					margin-top: -12px;
+					float: left;
+				}
+			}
+		}
+	}
+
+
+	.pagination{
+		margin: 20px 50px;
+	}

@@ -19,23 +19,6 @@ div.container a.brand {
 	background-image: none !important;
     background-repeat: repeat-x;
 }
-.navbar-brand h1 {
-
-}
-
-.alert-dismissable .close {
-	position: relative;
-	top: 2px;
-	right: -7px;
-	color: inherit;
-}
-
-.my-alert{
-	float: left;
-	display: inline-flex;
-	padding: 5px 15px;
-	margin-right: 10px;
-}
 
 .favorite{
 	display:none;
