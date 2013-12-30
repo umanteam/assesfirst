@@ -1,107 +1,230 @@
-<div class="panel panel-default">
-    <div class="panel-heading"><strong class="panel-title">Listes des évalués</strong></div>
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-md-3">
-                <form class="form-inline" role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="search" placeholder="Search">
+<div class="row">   
+    <div class="col-md-3">
+        <aside>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-md-3"><img src="<?php echo $this->basePath('img/pic6.jpg') ?>" style="width: 100%" alt="Profil"/></div>
+                        <div class="col-md-9"><strong class="panel-title">David BERNARD</strong><br /><span>1267</span></div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p><a class="btn btn-block btn-success"><i class="icon-user"></i>  Créer un évalué</a></p>
+                    <p><a class="btn btn-block btn-default"><i class="icon-groups-friends"></i> Importer des évalués</a></p>
+                </div>
+                <form role="form" style="margin-bottom: 20px">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#eval" class="">Evaluations</a></h4>
+                            </div>
+                            <div id="eval" class="panel-collapse in" style="height: auto;">
+                                <div class="panel-body row">
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> PSV20 <span class="badge pull-right">924</span> </label>
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> MF20 <span class="badge pull-right">42</span> </label>
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> GF40 <span class="badge pull-right">12</span> </label>
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> MNG360 <span class="badge pull-right">13</span> </label>
+                                    <hr />
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> Dernières lancées </label>
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> Dernières complétées  </label>
+                                    <hr />
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> Les miennes <span class="badge pull-right">1274</span> </label>
+                                    <label class="col-md-12"> <input type="checkbox" name="eval[]"> Cellules de Simon Baron <span class="badge pull-right">27</span> </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#fonction" class="">Fonction</a></h4>
+                            </div>
+                            <div id="fonction" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#poste" class="">Poste</a></h4>
+                            </div>
+                            <div id="poste" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#secteur" class="">Secteur</a></h4>
+                            </div>
+                            <div id="secteur" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#entreprise" class="">Entreprise</a></h4>
+                            </div>
+                            <div id="entreprise" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#experience" class="">Expérience</a></h4>
+                            </div>
+                            <div id="experience" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#niveaures" class="">Niveau de responsabilté</a></h4>
+                            </div>
+                            <div id="niveaures" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#management" class="">Management</a></h4>
+                            </div>
+                            <div id="management" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#etude" class="">Niveau d'étude</a></h4>
+                            </div>
+                            <div id="etude" class="panel-collapse collapse" style="height: auto;">
+                                <div class="panel-body">
+                                    Repellendus quia eligendi quae earum voluptate rerum sed recusandae consectetur saepe sed.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md-9">
-                <p class="alert alert-info alert-dismissable my-alert" >
-                    Direction générale <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                </p>
-                <p class="alert alert-info alert-dismissable my-alert" >
-                    AssessFirst <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                </p>
-                <p class="alert alert-info alert-dismissable my-alert">
-                    Tout éffacer <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                </p>
-            </div>
-        </div>
-        <form action="" class="evalue-table">
-            <table class="table table-hover">
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic6.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>David BERNARD</strong> <br /> Head of  Marketing & Communication (AssessFisrt)</p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Big5 Team</a> - 
-                                <a class="btn btn-link">Psychologues</a> et 
-                                <a class="btn btn-link">5 de plus</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic5.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>Alexandre COLLIGON</strong> <br /> Head of  Sales (AssessFisrt)</p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Big5 Team</a> - 
-                                <a class="btn btn-link">Consultants</a> et 
-                                <a class="btn btn-link">2 de plus</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic4.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>Benoit L'HUISSIER</strong> <br /> Head of  IT (AssessFisrt) <span class="label label-danger">.</span></p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Big5 Team</a> - 
-                                <a class="btn btn-link">Consultants</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>Simon BARON</strong> <br /> Head of  Sciences & Innovation (AssessFisrt)</p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Big5 Team</a> - 
-                                <a class="btn btn-link">Psychologues</a> et 
-                                <a class="btn btn-link">3 de plus</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic2.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>Yohana ROCHER</strong> <br />Consultants (AssessFisrt) <span class="label label-warning">.</span></p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Consultants</a></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="selection" class="selection"></td>
-                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
-                        <td><img src="<?php echo $this->basePath('img/pic1.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
-                        <td style="width: 80%;">
-                            <p><strong>Alexis TEPLICHI</strong> <br /> Head of  Administration & Fincance (AssessFisrt) <span class="label label-default">.</span></p>
-                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
-                                <a class="btn btn-link">Big5 Team</a></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
+        </aside>
     </div>
-    <ul class="pagination">
-        <li class="disabled"><a >«</a></li>
-        <li class="active"><a >1 <span class="sr-only">(current)</span></a></li>
-        <li><a >2</a></li>
-        <li><a >3</a></li>
-        <li><a >4</a></li>
-        <li><a >5</a></li>
-        <li><a >»</a></li>
-     </ul>
+    <div class="col-md-9">
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong class="panel-title">Listes des évalués</strong></div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="search" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <p class="alert alert-info alert-dismissable my-alert" >
+                            Direction générale <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        </p>
+                        <p class="alert alert-info alert-dismissable my-alert" >
+                            AssessFirst <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        </p>
+                        <p class="alert alert-info alert-dismissable my-alert">
+                            Tout éffacer <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        </p>
+                    </div>
+                </div>
+                <form action="" class="evalue-table">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic6.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>David BERNARD</strong> <br /> Head of  Marketing & Communication (AssessFisrt)</p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Big5 Team</a> - 
+                                        <a class="btn btn-link">Psychologues</a> et 
+                                        <a class="btn btn-link">5 de plus</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic5.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>Alexandre COLLIGON</strong> <br /> Head of  Sales (AssessFisrt)</p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Big5 Team</a> - 
+                                        <a class="btn btn-link">Consultants</a> et 
+                                        <a class="btn btn-link">2 de plus</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic4.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>Benoit L'HUISSIER</strong> <br /> Head of  IT (AssessFisrt) <span class="label label-danger">.</span></p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Big5 Team</a> - 
+                                        <a class="btn btn-link">Consultants</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>Simon BARON</strong> <br /> Head of  Sciences & Innovation (AssessFisrt)</p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Big5 Team</a> - 
+                                        <a class="btn btn-link">Psychologues</a> et 
+                                        <a class="btn btn-link">3 de plus</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic2.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>Yohana ROCHER</strong> <br />Consultants (AssessFisrt) <span class="label label-warning">.</span></p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Consultants</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="selection" class="selection"></td>
+                                <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                                <td><img src="<?php echo $this->basePath('img/pic1.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                                <td style="width: 80%;">
+                                    <p><strong>Alexis TEPLICHI</strong> <br /> Head of  Administration & Fincance (AssessFisrt) <span class="label label-default">.</span></p>
+                                    <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                        <a class="btn btn-link">Big5 Team</a></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <ul class="pagination">
+                <li class="disabled"><a >«</a></li>
+                <li class="active"><a >1 <span class="sr-only">(current)</span></a></li>
+                <li><a >2</a></li>
+                <li><a >3</a></li>
+                <li><a >4</a></li>
+                <li><a >5</a></li>
+                <li><a >»</a></li>
+             </ul>
+        </div>                    
+    </div>
 </div>

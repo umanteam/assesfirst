@@ -223,3 +223,91 @@ input[type="checkbox"]:checked:before {
 .pagination {
   margin: 20px 50px;
 }
+@media screen and (min-width: 667px) {
+  #modal-edit-main {
+    width: 77%;
+    margin: auto;
+    color: #9a9a9a;
+  }
+}
+.modal-backdrop {
+  background-color: #fafafa;
+}
+button.close {
+  background-image: url('../ico/btn-close-modal.png');
+  opacity: 1;
+  width: 16px;
+  height: 17px;
+  margin-right: 6px;
+}
+#frm-info-edit {
+  margin: 20px 0;
+}
+#form-head {
+  background-color: #99d600;
+  min-height: 200px;
+  border-radius: 10px;
+  padding: auto;
+}
+#form-head #form-head-content {
+  padding: 25px;
+  text-align: center;
+}
+#form-head #form-head-title {
+  font-size: x-large;
+  color: white;
+}
+#form-head #form-head-pills {
+  left: 38px;
+}
+p.row-title {
+  color: #9a9a9a;
+  margin-left: 20px;
+}
+li a.tab-ico {
+  text-indent: -5000px;
+  width: 71px;
+  height: 72px;
+  background-color: transparent !important;
+  margin: 0 10px;
+  background-image: url('../ico/ico-form-2.png');
+}
+li a#nav-pill-general {
+  background-position: 0 72px;
+}
+li a#nav-pill-general:hover {
+  background-position: 0 0;
+}
+li.active a#nav-pill-general {
+  background-position: 0 1px;
+}
+li.active a#nav-pill-general:hover {
+  background-position: 0 72px;
+}
+li a#nav-pill-visuel {
+  background-position: 214px 72px;
+}
+li.active a#nav-pill-visuel {
+  background-position: 215px 0;
+}
+li a#nav-pill-doc {
+  background-position: 142px 72px;
+}
+li.active a#nav-pill-doc {
+  background-position: 143px 0;
+}
+li a#nav-pill-citation {
+  background-position: 71px 72px;
+}
+li.active a#nav-pill-citation {
+  background-position: 71px 0;
+}
+#btn-reset {
+  background-image: none;
+  background-color: #ebebeb;
+}
+#btn-submit {
+  background-image: none;
+  background-color: #99d600;
+  border-color: #99d600;
+}
