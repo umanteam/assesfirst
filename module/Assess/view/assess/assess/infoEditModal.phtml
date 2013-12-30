@@ -1,0 +1,261 @@
+<style>
+    @media screen and (min-width: 667px) {
+        #modal-edit-main {
+            width: 77%;
+            margin: auto;
+            color: #929292;
+            //border: solid;
+            //border-radius: 10px;
+        }
+    }
+
+
+    .modal-backdrop {
+        background-color: #EFEFEF;
+    }
+
+    button.close {
+        background-image: url('../ico/btn-close-modal.png');
+        opacity: 1;
+        width: 16px;
+        height: 17px;
+        margin-right: 6px;
+    }
+    #frm-info-edit {
+        margin: 20px 0;
+    }
+
+    #form-head {
+        background-color: #99D600;
+        min-height: 200px;
+        border-radius: 10px;
+        padding: auto;
+    }
+
+    #form-head-content {
+        padding: 25px;
+        text-align: center;
+    }
+    #form-head-title {
+        font-size: x-large;
+        color: white;
+    }
+    p.row-title {
+        color: #929292;
+        margin-left: 20px;
+    }
+
+
+    li a.tab-ico {
+        text-indent: -5000px;
+        width: 71px;
+        height: 72px;
+        background-color: transparent !important; 
+        margin: 0 10px; 
+        background-image : url('../ico/ico-form-2.png');  
+    }
+
+    li a#nav-pill-general{ 
+        background-position : 0 72px;           
+        &:hover {background-position : 0 0;}
+    }
+    li.active a#nav-pill-general{ 
+        background-position : 0 1px;              
+        &:hover {background-position : 0 72px;}
+    }
+    li a#nav-pill-visuel{ 
+        background-position : 214px 72px; 
+    }
+    li.active a#nav-pill-visuel{ 
+        background-position : 215px 0; 
+    }
+    li a#nav-pill-doc{ 
+        background-position : 142px 72px; 
+    }
+    li.active a#nav-pill-doc{ 
+        background-position : 143px 0; 
+    }
+    li a#nav-pill-citation{ 
+        background-position : 71px 72px; 
+    }
+    li.active a#nav-pill-citation{ 
+        background-position : 71px 0; 
+    }
+
+    #btn-reset {
+        background-image: none;
+        background-color: #DEDEDE;
+    }
+
+    #btn-submit {
+        background-image: none;
+        background-color: #99D600;
+        border-color: #99D600;
+    }
+</style>
+
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launcer modal demo
+</button>
+
+<!-- <div id="modal-edit-main"> -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" id="modal-edit-main">
+        <div class="modal-content">
+            <div id="form-head" class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <div id="form-head-content">
+                    <p id="form-head-title">Infomations personnelles</p>
+                    <div id="form-head-pills" class="col-lg-6 col-md-8 col-lg-offset-3 col-md-offset-2">
+                        <ul class="nav nav-pills">
+                            <li class="active "><a class="tab-ico" id="nav-pill-general" href="#pill-info-general"  data-toggle="tab">G</a></li>
+                            <li><a class="tab-ico" id="nav-pill-visuel" href="#pill-info-visuel" data-toggle="tab">V</a></li>
+                            <li><a class="tab-ico" id="nav-pill-doc" href="#pill-info-doc" data-toggle="tab">D</a></li>
+                            <li><a class="tab-ico" id="nav-pill-citation" href="#pill-info-citation" data-toggle="tab">C</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form role="form" class=" modal-body form-inline border" id="frm-info-edit">
+                <div class="tab-content ">
+                    <div class="tab-pane active" id="pill-info-general">
+                        <!-- ----------------- Row 1 Identite ----------------- -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="row-title"><strong>Identité</strong></p>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                                    <label class="sr-only" for="prenom">Prénom</label>
+                                    <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-4">
+                                    <label class="sr-only" for="nom">Nom</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Nom">
+                                </div>
+                                <div class=" col-lg-4 col-md-4 col-sm-4">
+                                    <span class=" col-lg-3 col-md-3 col-sm-3"><strong>Sexe</strong></span>
+                                    <div class="form-group col-lg-9 col-md-9 col-sm-9">
+                                        <div class="radio radio-inline">
+                                            <label>
+                                                <input type="radio" name="sexe" id="radio1" value="homme">
+                                                Homme
+                                            </label>
+                                        </div>
+                                        <div class="radio radio-inline">
+                                            <label>
+                                                <input type="radio" name="sexe" id="radio2" value="femme">
+                                                Femme
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr/>
+                        <!-- ----------------- Row 2 Langue ----------------- -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="row-title"><strong>Langue</strong></p>
+                                <div class="form-group col-lg-8 col-md-8 col-sm-8">
+                                    <select class="form-control">
+                                        <option id="" disabled selected>Langue</option>
+                                        <option id="1">Français</option>
+                                        <option id="2">Anglais</option>
+                                        <option id="3">Espagnol</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr/>
+                        <!-- ----------------- Row 3 BirthDay ----------------- -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="row-title"><strong>Date de naissance</strong></p>
+                                <div class="form-group col-lg-2 col-md-2 col-sm-2">
+                                    <select class="form-control">
+                                        <option id="" disabled selected>Jour</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-3">
+                                    <select class="form-control">
+                                        <option id="" disabled selected>Mois</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-2 col-md-2 col-sm-2">
+                                    <select class="form-control">
+                                        <option id="" disabled selected>Année</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr/>
+                        <!-- ----------------- Row 4 Email ----------------- -->
+                        <div class="row">
+                            <div class="row col-md-12">
+                                <div class="col-md-8">
+                                    <p class="row-title"><strong>Email(s)</strong></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="row-title col-md-12"><strong>Email principal</strong></p>
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="col-md-8">
+                                    <div class="form-group col-md-12">
+                                        <label class="sr-only" for="email-1">Email</label>
+                                        <input type="text" class="form-control" id="email-1" placeholder="dbernard@assessfirst.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group col-md-8 col-md-offset-3">
+                                        <input type="radio">
+                                    </div>
+                                </div> 
+                            </div>               
+                            <br/>
+                            <div class="row col-md-12">
+                                <div class="col-md-8">
+
+                                    <div class="form-group col-md-12">
+                                        <label class="sr-only" for="email-1">Email</label>
+                                        <input type="text" class="form-control" id="email-1" placeholder="dbernard@assessfirst.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group col-md-8 col-md-offset-3">
+                                        <input type="radio">
+                                    </div>
+                                </div>                   
+                            </div>
+                            <br/> 
+                            <div class="row col-md-12">
+                                <div class="col-md-4">
+                                    <p><a class="btn btn-link">Ajouter une adresse email</a></p>
+                                </div>
+                            </div>
+                            <br/> 
+                            <br/>
+                        </div>
+
+                    </div>
+
+                    <!-- BackUp pills -->
+                    <div class="tab-pane" id="pill-info-visuel"></div>
+                    <div class="tab-pane" id="pill-info-doc"></div>
+                    <div class="tab-pane" id="pill-info-citation"></div>
+                </div>
+                <!-- Buttons -->
+                <div class="row">
+                    <div id="btn-group-frm-info-edit" class="col-lg-4 col-md-4 col-sm-6 col-lg-offset-8 col-md-offset-8 col-sm-offset-6">
+                        <input type="reset" id="btn-reset" class="btn btn-default col-lg-5 col-md-5 col-sm-5" value="Annuler" />
+                        <input type="submit" id="btn-submit" class="btn btn-primary col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" value="Valider" />
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>

@@ -1,1 +1,249 @@
-<pre><h3>module/Assess/view/assess/assess/candidate.phtml</h3></pre>
+<style>
+    .time-left {
+        margin-right: 10px;
+        float: right;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .list-social-net {
+        margin-left: 0;
+    }
+
+    .nav2-icon-vertical {
+        padding: 2px;
+        margin-left: 0 !important;
+    }
+    
+    #logo-up-right {
+        margin-top: 35px;
+        margin-right: 35px;
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-3">
+        <aside>
+            <div class="profile">
+                <div class="img-profile">
+                    <img class="img-responsive" src="<?php echo $this->basePath('img/pic6.jpg') ?>" alt="manager profile"/>
+                </div>
+                <div class="info-profile">
+                    <h4><?php echo $this->translate('david') ?> <span><?php echo $this->translate('bernard') ?></span></h4>
+                </div>
+            </div>
+            <div class="group-wrapper">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#contacts" class="">Mes contacts</a></h4>
+                </div>
+                <div id="contacts" class="panel-collapse in" style="height: auto;">
+                    <div class="panel-body row">
+                        <div>
+                            <div class="col-md-3 col-sm-3"><img src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="width: 100%"/></div>
+                            <div class="col-md-8 col-sm-8">Benoit L'HUISIER (GDF SUEZ)</div>
+                        </div>
+                        <div>
+                            <div class="col-md-3 col-sm-3"><img src="<?php echo $this->basePath('img/pic4.jpg') ?>" style="width: 100%"/></div>
+                            <div class="col-md-8 col-sm-8"><p>Simon BARON (AXA)</p></div>
+                        </div>
+                        <div>
+                            <div class="col-md-9 col-md-offset-3"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Voir tous mes contacts</a></div>
+
+                        </div> 
+
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapsing">
+                        <div class="panel-body row">
+                            <div>
+                                <div class="col-md-3 col-sm-3"><img src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="width: 100%"/></div>
+                                <div class="col-md-8 col-sm-8">Benoit L'HUISIER (GDF SUEZ)</div>
+                            </div>
+                            <div>
+                                <div class="col-md-3 col-sm-3"><img src="<?php echo $this->basePath('img/pic4.jpg') ?>" style="width: 100%"/></div>
+                                <div class="col-md-8 col-sm-8"><p>Simon BARON (AXA)</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="cnx-wrapper">
+                <h5>Sa dernière connexion</h5>
+                <div class="cnx">
+                    <p><?php echo $this->translate('11 Avril 2013') ?> à <?php echo $this->translate('11:11:11') ?></p>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="col-md-9">
+
+        <div class="main">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="profile">
+                        <div class="info-profile col-md-12">
+
+                            <h3><?php echo $this->translate('simon') ?> <span><?php echo $this->translate('baron') ?></span></h3>
+                            <h5><?php echo $this->translate('Responsable de recrutement (AXA)') ?></h5>
+                            <br/>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <img class="border" src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="width: 100%"/>                                
+                                    </div>
+                                    <div class="col-md-1" id="list-social-net">
+                                        <ul class="nav nav-pills row">
+                                            <li class="nav2-icon nav2-icon-vertical"><a class="ico-8"href="<?php echo $this->url('home') ?>"></a></li>
+                                            <li class="nav2-icon nav2-icon-vertical"><a class="ico-5" href="<?php echo $this->url('home') ?>"></a></li>
+                                            <li class="nav2-icon nav2-icon-vertical"><a class="ico-7"href="<?php echo $this->url('home') ?>"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-md-push-1">
+                                <div>
+                                    Email
+                                    <br/>
+                                    sbaron@axa.com
+                                </div>
+                                <br/>
+                                <div>
+                                    Téléphone
+                                    <br/>
+                                    +33 (0)1 72 77 31 53
+                                </div>
+                                <br/>
+                                <div>
+                                    Portable
+                                    <br/>
+                                    +33 (0)6 63 70 88 42
+                                </div>
+                                <br/>
+                                <div>
+                                    Plus d'informations...
+                                    <br/>
+                                    <a class="ico-7"href="<?php echo $this->url('home') ?>">Afficher</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-push-1">
+                        <img id="logo-up-right" class="img-responsive" src="<?php echo $this->basePath('img/logo-axa.png') ?>" alt="axa"/>
+                    </div>
+
+            </div>
+
+
+            <div class="col-md-12 row">
+
+                <!-- ******************** MSG tabs ******************** -->
+                <div class="col-md-12 col-sm-12">
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a href="#fil-activite" data-toggle="tab">Fil d'activité</a>
+                        </li>
+                        <li class="active">
+                            <a href="#discussion"  data-toggle="tab">Discussion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="fil-activite">
+
+                    </div>
+                    <div class="tab-pane fade active in" id="discussion">
+                        <div class="col-md-12 col-sm-12 row">
+                            <!-- first message -->
+                            <div class="row">                                                                    
+                                <button type="button" class="close" data-dismiss="row" aria-hidden="true">&times;</button>
+                                <span class="time-left">
+                                    <?php echo $this->translate('12 Mai 2013') ?> - <?php echo $this->translate('9h34') ?>                                
+                                </span>
+                            </div>
+                            <div class="col-lg-1 col-sm-1">
+                                <img class="img-responsive" src="<?php echo $this->basePath('img/pic6.jpg') ?>" alt="manager profile"/>
+                            </div>
+                            <div class="col-lg-11 col-sm-11">
+                                <h3>David BERNARD</h3>
+                                <p>
+                                    Bonjour Monsieur BARON,
+                                    <br/>
+                                    Je viens de compléter le questionnaire de personnalité que vous avez fait parvenir.
+                                    <br/>
+                                    Pourais-je SVP avoir accès à mes résultats ?
+                                    <br/>
+                                    <br/>
+                                    Merci par avance.
+                                    <br/>
+                                    <br/>
+                                    David BERNARD
+                                </p>
+                            </div>
+
+                            <hr/>
+                            <!-- second message -->
+                            <div class="row">                                                                    
+                                <button type="button" class="close" data-dismiss="row" aria-hidden="true">&times;</button>
+                                <span class="time-left">
+                                    <?php echo $this->translate('12 Mai 2013') ?> - <?php echo $this->translate('10h04') ?>                                
+                                </span>
+                            </div>
+                            <div class="col-lg-1 col-sm-1">
+                                <img class="img-responsive" src="<?php echo $this->basePath('img/pic3.jpg') ?>" alt="manager profile"/>
+                            </div>
+                            <div class="col-lg-11 col-sm-11">
+                                <h3>Simon BARON</h3>
+                                <p>
+                                    Bonjour David, je viens de vous ouviri l'acrèss sur les résultats du test PSV20.
+                                    N'hésitez pas à revenir vers moi au besoin. Simon BARON
+                                    <br/>
+                                </p>
+                            </div>
+                            <hr/>
+
+                            <!-- 3rd message -->
+                            <div class="row">                                                                    
+                                <button type="button" class="close" data-dismiss="row" aria-hidden="true">&times;</button>
+                                <span class="time-left">
+                                    <?php echo $this->translate('12 Mai 2013') ?> - <?php echo $this->translate('10h52') ?>                                
+                                </span>
+                            </div>
+
+                            <div class="col-lg-1 col-sm-1">
+                                <img class="img-responsive" src="<?php echo $this->basePath('img/pic6.jpg') ?>" alt="manager profile"/>
+                            </div>
+                            <div class="col-lg-11 col-sm-11">
+                                <h3>David BERNARD</h3>
+                                <p>
+                                    Très bien je n'hésiterai pas. Bonne journée! ;)
+                                    <br/>
+                                </p>
+                            </div>
+                            <hr/>
+
+                            <!-- text box -->
+
+                            <div class="col-lg-1 col-sm-1">
+                                <img class="img-responsive" src="<?php echo $this->basePath('img/pic6.jpg') ?>" alt="manager profile"/>
+                            </div>
+                            <div class="col-lg-11 col-sm-11">
+                                <form>
+                                    <textarea class="form-control" id="" rows="4" placeholder="Votre message..."></textarea>
+                                </form>
+                            </div>
+                            <hr/>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
