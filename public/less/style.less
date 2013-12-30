@@ -89,10 +89,12 @@ body{background-color: @bodygray;}
 .navbar-nav {
 
 	.active { 
-		a{background-color :transparent !important;}
+		a{background-color :transparent !important;
+                &:hover {.hover-color(#b5e81a)
+                }
 		}
-	a:hover {.hover-color(#b5e81a)}
-}
+	}
+} 
 .nav-pills {float:left;}
 .nav-icon { padding: 10px 8px; float: left;
 	
