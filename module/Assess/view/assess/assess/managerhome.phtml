@@ -1,0 +1,107 @@
+<div class="panel panel-default">
+    <div class="panel-heading"><strong class="panel-title">Listes des évalués</strong></div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-9">
+                <p class="alert alert-info alert-dismissable my-alert" >
+                    Direction générale <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                </p>
+                <p class="alert alert-info alert-dismissable my-alert" >
+                    AssessFirst <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                </p>
+                <p class="alert alert-info alert-dismissable my-alert">
+                    Tout éffacer <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                </p>
+            </div>
+        </div>
+        <form action="" class="evalue-table">
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic6.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>David BERNARD</strong> <br /> Head of  Marketing & Communication (AssessFisrt)</p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Big5 Team</a> - 
+                                <a class="btn btn-link">Psychologues</a> et 
+                                <a class="btn btn-link">5 de plus</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic5.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>Alexandre COLLIGON</strong> <br /> Head of  Sales (AssessFisrt)</p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Big5 Team</a> - 
+                                <a class="btn btn-link">Consultants</a> et 
+                                <a class="btn btn-link">2 de plus</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic4.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>Benoit L'HUISSIER</strong> <br /> Head of  IT (AssessFisrt) <span class="label label-danger">.</span></p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Big5 Team</a> - 
+                                <a class="btn btn-link">Consultants</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic3.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>Simon BARON</strong> <br /> Head of  Sciences & Innovation (AssessFisrt)</p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Big5 Team</a> - 
+                                <a class="btn btn-link">Psychologues</a> et 
+                                <a class="btn btn-link">3 de plus</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic2.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>Yohana ROCHER</strong> <br />Consultants (AssessFisrt) <span class="label label-warning">.</span></p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Consultants</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="selection" class="selection"></td>
+                        <td><label><input type="checkbox" checked="checked"  name="favorite" class="favorite"><span class="glyphicon glyphicon-star"></span></label></td>
+                        <td><img src="<?php echo $this->basePath('img/pic1.jpg') ?>" style="max-width: 80px;" alt="Profil"/></td>
+                        <td style="width: 80%;">
+                            <p><strong>Alexis TEPLICHI</strong> <br /> Head of  Administration & Fincance (AssessFisrt) <span class="label label-default">.</span></p>
+                            <p>in <a class="btn btn-link">Dream Team AssessFirst</a> - 
+                                <a class="btn btn-link">Big5 Team</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <ul class="pagination">
+        <li class="disabled"><a >«</a></li>
+        <li class="active"><a >1 <span class="sr-only">(current)</span></a></li>
+        <li><a >2</a></li>
+        <li><a >3</a></li>
+        <li><a >4</a></li>
+        <li><a >5</a></li>
+        <li><a >»</a></li>
+     </ul>
+</div>

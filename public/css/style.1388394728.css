@@ -207,9 +207,18 @@ input[type="checkbox"]:checked:before {
   border-radius: 50%;
   vertical-align: middle;
 }
+#eval .panel-body {
+  font-size: 90%;
+}
 #eval .panel-body input[type="checkbox"]:before {
   margin-top: -12px;
   float: left;
+}
+#eval .panel-body label {
+  font-weight: normal;
+}
+#eval .panel-body label .badge {
+  font-weight: normal;
 }
 .pagination {
   margin: 20px 50px;
