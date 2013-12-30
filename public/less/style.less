@@ -3,7 +3,7 @@
 @bodygray : #ebebeb;
 @lightgray : #fafafa;
 @gray : #9a9a9a;
-
+@text : #5e5e5e;
 /***** Vert *****/
 @green: #99d600;
 @lightgreen : #d1fb32;
@@ -17,11 +17,11 @@
 @darkblue : #448aab;
 @lightblue : #dceef6;
 
-/*****Jaune etoile *******/
-@yellow: #fffb00;
+/***** jaune *****/
+@yellow : #fffb00;
 
-body{background-color: @bodygray;} 
-
+body{background-color: @bodygray; color: @text;} 
+h1, h2, h3, h4, h5, h6 {font-weight: bold;}
 .attachement(@position: relative) {
 	position : @position;
 }
@@ -74,27 +74,23 @@ body{background-color: @bodygray;}
 	-webkit-border-radius: @radius;
 	-ms-border-radius: @radius;
 }
-
-/************** Checkbox background ******************/
-
-
 /*************** navbar *********************/
 
 .navbar-inverse {
 
-	background-color: @darkgray; .attachement; padding: 16px 0;
+	background-color: @darkgray; .attachement; padding: 16px 0; background-image: none;
 		
 		h1 {display: none;}
 	}
 .navbar-nav {
 
-	.active { 
+	.active, li { 
 		a{background-color :transparent !important;
                 &:hover {.hover-color(#b5e81a)
-                }
 		}
-	}
-} 
+                }
+}
+}
 .nav-pills {float:left;}
 .nav-icon { padding: 10px 8px; float: left;
 	
@@ -106,6 +102,7 @@ body{background-color: @bodygray;}
 	a.ico-2 { background-position : -33px 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
 	&:hover {background-position : -33px 33px;.hover-ico;}
 	}
+
 	
 }
 
@@ -117,9 +114,22 @@ body{background-color: @bodygray;}
 	a.ico-4 { background-position : 62px 0; background-image : url('../ico/ico-nav.png');  .ico-def(30px,30px); 
 	&:hover {background-position : 62px 31px;.hover-ico;}
 	}
+	
+	a.ico-5 { background-position : 0 0; background-image : url('../ico/ico-rs.png');  .ico-def(30px,30px); border-radius:0;
+	&:hover {background-position : 0 30px;.hover-ico;}
+	}
+	a.ico-6 { background-position : -30px 0px; background-image : url('../ico/ico-rs.png');  .ico-def(30px,30px); border-radius:0;
+	&:hover {background-position : -30px 30px;.hover-ico;}
+	}
+	a.ico-7 { background-position : -60px 0; background-image : url('../ico/ico-rs.png');  .ico-def(30px,30px); border-radius:0;
+	&:hover {background-position : -60px 30px;.hover-ico;}
+	}
+	a.ico-8 { background-position : -90px 0; background-image : url('../ico/ico-rs.png');  .ico-def(30px,30px); border-radius:0;
+	&:hover {background-position : -90px 30px;.hover-ico;}
+	}
+	
 }
 .bt-search {margin-top : 10px; width: auto !important; float: left;}
-
 
 /***************** btn *********************/
 .btn{
@@ -141,14 +151,64 @@ body{background-color: @bodygray;}
 		background: @lightgray;
 	}
 }
-
 /*************** aside *********************/
 
-aside {background-color: #fff;.border(6px)}
+aside {background-color: @lightgray;.border(6px); overflow: hidden;}
+	.profile{ overflow: hidden;  margin : 14px;
+		.img-profile{border: 1px solid #dee0e2; width: 15%;float: left;margin-right: 14px;}
+		.info-profile{float:left;
+			h4,h3{ text-transform: capitalize; margin: 0;
+			span{text-transform: uppercase;}
+			}
+			h6{margin: 0; color : @blue;}
+			h5{margin: 0;}
+		}
+	}
+		.button-wrapper {float: left; background-color : #fff;  padding :20px 14px; width: 100%;
+			.bt-eva,.bt-msg{
+				padding: 10px 0 10px 31px;
+				text-shadow: 0 0 #FFFFFF;
+				border: medium none;
+				box-shadow: none;
+				/*font-weight: bold;*/
+			}
+			.bt-eva{background : url("../ico/ico-eva.gif") no-repeat scroll 14px 10px @green;
+			margin-bottom: 12px;
+			color: #FFFFFF;
+			&:hover {.hover-color(@lightgreen)}}
+			
+			.bt-msg{background : url("../ico/ico-msg.gif") no-repeat scroll 14px 10px @bodygray;
+			&:hover {.hover-color(@gray)}}
+		}
+		
+		.group-wrapper { float: left; width : 100%;
+			li { border:none;}
+			ul {box-shadow: none; margin-bottom : 0} 
+			.title-list {background-color : @lightgray;font-weight: bold;
+				.badge {background-color : #fff; color : @darkgray;}
+			}
+			.group-hide {
+				.panel {border: none; box-shadow: none;}
+				.panel-heading {background-color: #fff;background-image: none;text-align: center;border: none;}
+				a {text-decoration: none; color :@blue;
+				&:hover{.hover-color(#58aee8)}}
+				.panel-body {border-top-color: #fff !important; padding : 0 !important;}
+				.list-group-item {padding: 10px 0 !important; border-radius : 0px;}
+			}
+		}
+		.stat-wrapper,.cnx-wrapper {float: left;width: 100%;
+			h5,p{margin: 14px 16px;}
+			.stat {background-color: #fff; width:100%;text-align : center; padding : 10px 0;
+				img {margin : auto;}
+				}
+			.cnx {background-color: #fff;width: 100%; overflow: hidden;}
+		}
+
 
 /*************** Main *********************/
 
-.main {background-color: @lightgray; .border(6px)}
+.main {background-color: @lightgray; .border(6px); overflow: hidden}
+
 
 /*************** frontOffice Manager - Home *************/
 	.my-alert{ float: left; display: inline-flex; padding: 5px 15px; margin-right: 10px; }
